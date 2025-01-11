@@ -11,12 +11,21 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         caption{
             font-weight: bold;
             font-size: 1.5em;
             background-color: lightgray;
             padding: 5px;
+        }
+        thead >tr >th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+        tbody > tr:nth-child(odd){
+            background-color: lightgray;
         }
         td, th{
             border: 1px solid black;
@@ -29,7 +38,7 @@
         .num{
             text-align: right;
         }
-    
+       
     </style>
 </head>
 <body>
